@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+  <form onsubmit="timer(event)">
+    <h2><span class="purple">CLOCKIN</span> best timer for devs</h2>
+    <input id="text" type="text" placeholder="00:00:00"/>
+    <div class="controls"> 
+      <input type="submit" value="START" />
+      <button id="finish" type="button" onclick="stopTimer()" style="display: none;"/>
+    </div>
+  </form>
+  <script src="./contador.js"></script>
+</body>
+</html>
